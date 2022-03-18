@@ -4,9 +4,9 @@ var n = 9;
 for (x = 0; x < n; x++) {
   for (y = 0; y < n; y++) {
     if (x == y) {
-      document.write(x * 2 + 1 + "&nbsp");
+      document.write(x * 2 + 1 + " &nbsp");
     } else {
-      document.write(" 🆇 ");
+      document.write(" - " + "&nbsp");
     }
   }
   document.write("<br>");
@@ -21,9 +21,9 @@ var n = 9;
 for (x = 0; x < n; x++) {
   for (y = 0; y < n; y++) {
     if (n - x - 1 == y) {
-      document.write(y * 2 + "&nbsp");
+      document.write(y * 2 + "&nbsp ");
     } else {
-      document.write(" 🆇 ");
+      document.write(" - " + " &nbsp");
     }
   }
   document.write("<br>");
@@ -38,11 +38,11 @@ var n = 9;
 for (x = 0; x < n; x++) {
   for (y = 0; y < n; y++) {
     if (x == y) {
-      document.write(x * 2 + 1 + "&nbsp");
+      document.write(x * 2 + 1 + " &nbsp ");
     } else if (n - x - 1 == y) {
-      document.write(y * 2 + "&nbsp");
+      document.write(y * 2 + " &nbsp ");
     } else {
-      document.write(" 🆇 ");
+      document.write(" - " + " &nbsp");
     }
   }
   document.write("<br>");
@@ -68,9 +68,9 @@ document.write("<br><br>");
 // x + 7 == y ||
 // x + 8 == y
 // ) {
-// document.write(" 🆇 ");
+// document.write(" - "+" &nbsp");
 // } else {
-// document.write(" 🅰 ");
+// document.write(" A ");
 // }
 // }
 // document.write("<br>");
@@ -85,9 +85,9 @@ for (x = 0; x < n; x++) {
     if (x == y) {
       document.write(x * 2 + 1 + "&nbsp");
     } else if (x > y) {
-      document.write(" 🅰 ");
+      document.write("A" + "&nbsp");
     } else {
-      document.write(" 🆇 ");
+      document.write(" - " + "&nbsp");
     }
   }
   document.write("<br>");
@@ -104,9 +104,9 @@ for (x = 0; x < n; x++) {
     if (x == y) {
       document.write(x * 2 + 1 + "&nbsp");
     } else if (x > y) {
-      document.write(" 🅰 ");
+      document.write(" A " + "&nbsp");
     } else {
-      document.write(" 🅱 ");
+      document.write(" B " + "&nbsp");
     }
   }
   document.write("<br>");
